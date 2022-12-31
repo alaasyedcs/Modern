@@ -1,0 +1,73 @@
+.contact {
+ padding-top: var(--section-padding);
+ padding-bottom: var(--section-padding);
+ background: #3a3846;
+}
+
+.contact .info-contact {
+ padding-top: var(--section-padding);
+ padding-bottom: var(--section-padding);
+ text-align: center;
+}
+
+.contact .info-contact .label {
+ font-size: 35px;
+ font-weight: 800;
+ color: var(--color-heading);
+ letter-spacing: -2px;
+ margin-bottom: 15px;
+}
+
+.contact .info-contact .link {
+ display: block;
+ font-size: 35px;
+ font-weight: 800;
+ color: var(--color-heading);
+ text-decoration: none;
+}
+
+.contact .info-contact .social {
+ display: flex;
+ justify-content: center;
+ margin-top: 40px;
+ font-size: 16px;
+}
+
+.contact .info-contact .social h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 29px;
+    color: aliceblue;
+}
+
+.contact .info-contact .social .icon {
+   margin: 10px;
+   font-size: 22px;
+   justify-content: space-between;
+}
+
+i+i {
+ padding-left: 8px;
+}
+
+.contact .info-contact .social .icon .face {
+ color: #3b5998;
+}
+
+.contact .info-contact .social .icon .twit {
+ color: #00acee;
+}
+
+.contact .info-contact .social .icon .sapp {
+ color: #25D366;
+}
+
+@media (max-width: 767px) {
+
+ .contact .info-contact .label,
+ .contact .info-contact .link {
+  font-size: 25px;
+ }
+}

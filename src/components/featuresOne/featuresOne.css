@@ -1,0 +1,36 @@
+.features {
+ padding-top: var(--section-padding);
+ padding-bottom: var(--section-padding);
+ background-color: #3a3846;
+}
+
+.features-content {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ grid-gap: 20px;
+ margin-top: 80px;
+}
+
+.card {
+ background-color: #f1f1f1;
+}
+
+.features .features-content .card img {
+ max-width: 100%;
+}
+
+.features .features-content .card .info {
+ padding: 20px;
+}
+
+.aboutTitle h3 {
+ color: rgb(0, 0, 0);
+ text-align: center;
+}
+
+.aboutText p {
+ color: #777;
+ line-height: 2;
+ margin: 0 0 3 0;
+ text-align: center;
+}

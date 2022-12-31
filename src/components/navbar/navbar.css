@@ -1,0 +1,173 @@
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.4rem 6rem;
+}
+
+.navbar-links {
+ display: flex;
+ flex: 1;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.navbar-links a:hover {
+ cursor: pointer;
+ background: linear-gradient(90deg, #6c557e, transparent) #2196f3;
+ border-radius: 9999px;
+ width: 52px;
+ height: 52px;
+ width: auto;
+ height: auto;
+ padding: 10px;
+ transition-duration: 150ms;
+ text-decoration: none;
+ transition: background-color 1s;
+ place-content: center;
+}
+
+.logo {
+ margin-right: 2rem;
+}
+
+.logo img {
+ width: 60px;
+}
+
+.links {
+ display: flex;
+ flex-direction: row;
+}
+
+.sign {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+.links li,
+.sign p,
+.menu p {
+ color: #fff;
+ font-family: var(--font-family);
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 25px;
+ text-transform: capitalize;
+
+ margin: 0 1rem;
+ cursor: pointer;
+}
+
+.sign button,
+.menu button {
+ padding: 0.5rem 1rem;
+ color: #fff;
+ background: var(--color-button);;
+ font-family: var(--font-family);
+ font-weight: 500;
+ font-size: 18px;
+ line-height: 25px;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ border-radius: 5px;
+}
+
+.menu {
+ margin-left: 1rem;
+ color: #fff;
+ font-weight: bold;
+ display: none;
+ position: relative;
+}
+
+.menu li:not(:last-child) a {
+ border-bottom: 0.1px solid #ddd;
+ text-align: center;
+ display: block;
+ padding: 10px;
+}
+
+.menu a:hover {
+
+ cursor: pointer;
+  background: linear-gradient(90deg, #6c557e, transparent) #2196f3;
+  border-radius: 9999px;
+  width: 52px;
+  height: 52px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  transition-duration: 150ms;
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+
+}
+
+menu svg {
+ cursor: pointer;
+}
+
+.menu-toggle {
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ flex-direction: column;
+
+ text-align: end;
+ background: #5e5565f0;
+ padding: 2rem;
+ position: absolute;
+ right: 0;
+ top: 40px;
+ margin-top: 1rem;
+ min-width: 172px;
+ border-radius: 5px;
+ box-shadow: 0px 0px 5px rgb(0 0 0 / 20%)
+}
+
+.menu-toggle li {
+ margin: 1rem 0;
+}
+
+.menu-toggle-links-sign {
+ display: none;
+}
+
+/* Menu */
+@media screen and (max-width: 576px) {
+ .navbar {
+  padding: 2rem;
+ }
+
+ .sign {
+  display: none;
+ }
+
+ .menu-toggle {
+  top: 20px;
+ }
+
+ .menu-toggle-links-sign {
+  display: block;
+ }
+}
+
+@media screen and (max-width: 768px) {
+ .navbar {
+  padding: 2rem 4rem;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+ .links {
+  display: none;
+ }
+
+ .menu {
+  display: flex;
+ }
+}
